@@ -2,6 +2,10 @@ import { useEffect, useState } from "react"
 import { Col, Container, Row } from "react-bootstrap"
 import {ArrowRightCircle} from 'react-bootstrap-icons'
 import headerimg from '../assets/img/header-img.svg'
+import 'animate.css';
+import TrackVisibility from "react-on-screen";
+import { isVisible } from "@testing-library/user-event/dist/utils";
+
 export const Banner = () =>{
     const [loopNum, setloopNum] = useState(0)
     const [isDeleting, setisDeleting] = useState(false)
@@ -44,10 +48,15 @@ export const Banner = () =>{
             <Container>
                 <Row classname='align-items-center'>
                   <Col xs={12} md={6} xl={7}>
+                    <TrackVisibility>
+                    {({ isVisible }) =>
+                    <div className={isVisible ? 'animate__animated animate___fadein' : ''}>
                       <span className='tagline'>Welcome to my Portfolio</span>
                       <h1>{`Hi I'm Michael a`}<span className="wrap"> {text}</span></h1>
-                      <p>LOREMTN DFISJF SD DSIFNSODFI DFOIJDFOIJFD DSIJFO DSFIDJF SDOIFJ DFOIJDF DOIJF SOI j</p>
+                      <p>I build quality products to fit my clients needs</p>
                       <button onClick={() => console.log('connect')}>Lets Connect<ArrowRightCircle size={25}/></button>
+                      </div>}
+                      </TrackVisibility>
                   </Col>  
                   <Col xs={12} md={6} xl={5}>
                       <img src={headerimg} alt="headder"></img>

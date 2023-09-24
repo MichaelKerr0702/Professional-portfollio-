@@ -35,23 +35,23 @@ export const Skills = () => {
                     <Col>
                         <div className="skill-bx">
                             <h2>Skills</h2>
-                            <p>Lsdjaospsijfiujds[jnc[dnc</p>
+                            <p>These are just a few of the skills I posses as a Full Stack Developer</p>
                             <Carousel responsive={responsive} infinite={true} className="skill-slider">
                                <div className='item'>
                                   <img src={meter1} alt={'IMAGE'}></img>
-                                  <h5>Web Development</h5>
+                                  <h5>Full Stack Web Development</h5>
                                </div>
                                <div className='item'>
                                   <img src={meter2} alt={'IMAGE'}></img>
-                                  <h5>Web Development</h5>
+                                  <h5>Python</h5>
                                </div>
                                <div className='item'>
                                   <img src={meter3} alt={'IMAGE'}></img>
-                                  <h5>Web Development</h5>
+                                  <h5>C++</h5>
                                </div>
                                <div className='item'>
                                   <img src={meter1} alt={'IMAGE'}></img>
-                                  <h5>Web Development</h5>
+                                  <h5>SQL</h5>
                                </div>
                             </Carousel>
                         </div>

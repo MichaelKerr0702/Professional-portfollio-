@@ -6,6 +6,8 @@ import navicon2 from '../assets/img/nav-icon2.svg';
 import navicon3 from '../assets/img/nav-icon3.svg';
 
 
+
+
 export const TopBar = () => {
     const [activelink, setActiveLink] = useState('home');
     const [scrolled, setScroll] = useState(false);
@@ -40,15 +42,15 @@ export const TopBar = () => {
             <Nav className="me-auto">
               <Nav.Link href="#home" className={activelink === 'home' ? "active navbar-link": 'navbar-link'} onClick={()=> onUpdateActiveLink('home')}>Home</Nav.Link>
               <Nav.Link href="#skills" className={activelink === 'skills' ? "active navbar-link": 'navbar-link'} onClick={()=> onUpdateActiveLink('skills')}>Skills</Nav.Link>
-              <Nav.Link href="#projects" className={activelink === 'projects' ? "active navbar-link": 'navbar-link'} onClick={()=> onUpdateActiveLink('projects')}>Projects</Nav.Link>
+              <Nav.Link href="#projectCard" className={activelink === 'projects' ? "active navbar-link": 'navbar-link'} onClick={()=> onUpdateActiveLink('projects')}>Projects</Nav.Link>
             </Nav>
             <span className = "navbar-text">
                 <div className="social-icon">
-                    <a href="#"><img src={navicon1} alt=''/></a>
+                    <a href="www.linkedin.com/in/michael-kerr-078299251"><img src={navicon1} alt='linked in'/></a>
                     <a href="#"><img src={navicon2} alt=''/></a>
                     <a href="#"><img src={navicon3} alt=''/></a>
                 </div>
-            <button className='vvd'onClick={()=> console.log('connect')}><span>lets Connect!</span></button>
+            <button className='vvd'><span>lets Connect!</span></button>
             </span>
           </Navbar.Collapse>
         </Container>
