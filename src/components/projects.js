@@ -14,32 +14,72 @@ export const Projects = () => {
       title: "Business Startup",
       description: "Design & Development",
       imgUrl: projImg1,
-      URL:'https://github.com/MichaelKerr0702/Reserve-to-dine'
+      href:'https://github.com/MichaelKerr0702/Reserve-to-dine',
+      id: 'fullstack'
+
     },
     {
       title: "Business Startup",
       description: "Design & Development",
       imgUrl: projImg2,
+      href:'https://github.com/MichaelKerr0702/book-search',
+      id: 'fullstack'
     },
     {
       title: "Business Startup",
       description: "Design & Development",
       imgUrl: projImg3,
+      href:'https://github.com/MichaelKerr0702/Reserve-to-dine',
+      id: 'fullstack'
     },
     {
       title: "Business Startup",
       description: "Design & Development",
       imgUrl: projImg1,
+      href:'https://github.com/MichaelKerr0702/mod13-chal',
+      id: 'fullstack'
     },
     {
       title: "Business Startup",
       description: "Design & Development",
       imgUrl: projImg2,
+      href:'https://github.com/MichaelKerr0702/Professional-portfollio-',
+      id: 'frontend'
+    },
+    {
+      title: "Business Startup",
+      description: "Design & Development",
+      imgUrl: projImg2,
+      href:'https://github.com/MichaelKerr0702/Reserve-to-dine',
+      id: 'frontend'
+    },
+    {
+      title: "Business Startup",
+      description: "Design & Development",
+      imgUrl: projImg2,
+      href:'https://github.com/MichaelKerr0702/Reserve-to-dine',
+      id: 'frontend'
     },
     {
       title: "Business Startup",
       description: "Design & Development",
       imgUrl: projImg3,
+      href:'https://github.com/MichaelKerr0702/professional-readME-generator',
+      id: 'backend'
+    },
+    {
+      title: "Business Startup",
+      description: "Design & Development",
+      imgUrl: projImg3,
+      href:'https://github.com/MichaelKerr0702/nosql',
+      id: 'backend'
+    },
+    {
+      title: "Business Startup",
+      description: "Design & Development",
+      imgUrl: projImg3,
+      href:'https://github.com/MichaelKerr0702/Reserve-to-dine',
+      id: 'backend'
     },
   ];
 
@@ -56,53 +96,59 @@ export const Projects = () => {
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                     <Nav.Item>
-                      <Nav.Link eventKey="first">Websites</Nav.Link>
+                      <Nav.Link eventKey="frontend">Frontend</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="second">Python</Nav.Link>
+                      <Nav.Link eventKey="backend">Backend</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="third">C++</Nav.Link>
+                      <Nav.Link eventKey="fullstack">Fullstack</Nav.Link>
                     </Nav.Item>
                   </Nav>
                   <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
-                    <Tab.Pane eventKey="first">
+                    <Tab.Pane eventKey="frontend">
                       <Row>
                         {
                           projects.map((project, index) => {
+                            if (project.id ==='frontend'){
                             return (
                               <ProjectCard
                                 key={index}
                                 {...project}
                                 />
                             )
+                          }
                           })
                         }
                       </Row>
                     </Tab.Pane>
-                    <Tab.Pane eventKey="second">
+                    <Tab.Pane eventKey="backend">
                     <Row>
                         {
                           projects.map((project, index) => {
-                            return (
-                              <ProjectCard
-                                key={index}
-                                {...project}
-                                />
-                            )
+                            if (project.id ==='backend'){
+                              return (
+                                <ProjectCard
+                                  key={index}
+                                  {...project}
+                                  />
+                              )
+                            }
                           })
                         }
                       </Row>                    </Tab.Pane>
-                    <Tab.Pane eventKey="third">
+                    <Tab.Pane eventKey="fullstack">
                     <Row>
                         {
                           projects.map((project, index) => {
-                            return (
-                              <ProjectCard
-                                key={index}
-                                {...project}
-                                />
-                            )
+                            if (project.id ==='fullstack'){
+                              return (
+                                <ProjectCard
+                                  key={index}
+                                  {...project}
+                                  />
+                              )
+                            }
                           })
                         }
                       </Row>                    </Tab.Pane>
@@ -113,7 +159,7 @@ export const Projects = () => {
           </Col>
         </Row>
       </Container>
-      <img className="background-image-right" src={colorSharp2}></img>
+      <img className="background-image-right" alt="img"src={colorSharp2}></img>
     </section>
   )
 }

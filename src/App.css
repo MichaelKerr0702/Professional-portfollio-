@@ -73,7 +73,14 @@ input:focus, textarea:focus, select:focus {
 		padding: 0 150px;
 	}
 }
+a {
+  color: inherit;
+  text-decoration: none;
+}
 
+a:hover {
+  text-decoration: underline;
+}
 p.success {
 	color: green;
 }

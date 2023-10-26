@@ -1,8 +1,7 @@
 import { Col, Container, Row } from "react-bootstrap";
 import logo from '../assets/img/newlogo.png';
 import navicon1 from '../assets/img/nav-icon1.svg';
-import navicon2 from '../assets/img/nav-icon2.svg';
-import navicon3 from '../assets/img/nav-icon3.svg';
+import navicon3 from '../assets/img/iconmonstr-github-1.svg';
 
 export const Footer = () => {
     return (
@@ -14,9 +13,8 @@ export const Footer = () => {
                     </Col>
                     <Col sm={6} className="text-center text-sm-end">
                         <div className="social-icon">
-                            <a href="www.linkedin.com/in/michael-kerr-078299251"><img src={navicon1} alt=''/></a>
-                            <a href="#"><img src={navicon2} alt=''/></a>
-                            <a href="#"><img src={navicon3} alt=''/></a>
+                        <a href="https://www.linkedin.com/in/michael-kerr-078299251/" target="__blank"><img src={navicon1} alt='linked in'/></a>
+                        <a href="https://github.com/MichaelKerr0702" target="__blank"><img src={navicon3} alt=''/></a>
                         </div>
                         <p>CopyRight 2023. All Rights Reserved Michael Kerr</p>
                     </Col>
