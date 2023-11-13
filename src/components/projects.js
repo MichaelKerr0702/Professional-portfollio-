@@ -1,8 +1,8 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import projImg1 from "../assets/img/project-img1.png";
-import projImg2 from "../assets/img/project-img2.png";
-import projImg3 from "../assets/img/project-img3.png";
+import projImg1 from "../assets/img/wmf4pf98d4l61.png";
+import projImg2 from "../assets/img/1307940.png";
+import projImg3 from "../assets/img/8313f67d2546e50652d4e31f74a1a789.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -11,7 +11,7 @@ export const Projects = () => {
 
   const projects = [
     {
-      title: "Business Startup",
+      title: "Reserve to dine",
       description: "Design & Development",
       imgUrl: projImg1,
       href:'https://github.com/MichaelKerr0702/Reserve-to-dine',
@@ -19,63 +19,49 @@ export const Projects = () => {
 
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
+      title: "Book Search",
+      description: "Development",
+      imgUrl: projImg1,
       href:'https://github.com/MichaelKerr0702/book-search',
       id: 'fullstack'
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
-      href:'https://github.com/MichaelKerr0702/Reserve-to-dine',
-      id: 'fullstack'
-    },
-    {
-      title: "Business Startup",
+      title: "Product page",
       description: "Design & Development",
       imgUrl: projImg1,
       href:'https://github.com/MichaelKerr0702/mod13-chal',
       id: 'fullstack'
     },
     {
-      title: "Business Startup",
+      title: "Portfolio",
       description: "Design & Development",
       imgUrl: projImg2,
       href:'https://github.com/MichaelKerr0702/Professional-portfollio-',
       id: 'frontend'
     },
     {
-      title: "Business Startup",
+      title: "Reserve to dine",
       description: "Design & Development",
       imgUrl: projImg2,
       href:'https://github.com/MichaelKerr0702/Reserve-to-dine',
       id: 'frontend'
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
-      href:'https://github.com/MichaelKerr0702/Reserve-to-dine',
-      id: 'frontend'
-    },
-    {
-      title: "Business Startup",
+      title: "professional readME generator",
       description: "Design & Development",
       imgUrl: projImg3,
       href:'https://github.com/MichaelKerr0702/professional-readME-generator',
       id: 'backend'
     },
     {
-      title: "Business Startup",
+      title: "Nosql",
       description: "Design & Development",
       imgUrl: projImg3,
       href:'https://github.com/MichaelKerr0702/nosql',
       id: 'backend'
     },
     {
-      title: "Business Startup",
+      title: "Reserve to dine",
       description: "Design & Development",
       imgUrl: projImg3,
       href:'https://github.com/MichaelKerr0702/Reserve-to-dine',
